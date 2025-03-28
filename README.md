@@ -7,8 +7,8 @@ reasoning models.
 
 ## Usage
 Copy the source file into your checkout of the
-[SherlockBench-API](https://github.com/Xylon2/sherlockbench-api). For example
-under `src/clj/extra/`.
+[SherlockBench-API](https://github.com/Xylon2/sherlockbench-api)
+under `src/clj/`.
 
 Then edit `config.edn` and add it to `:problem-namespaces`.
 
