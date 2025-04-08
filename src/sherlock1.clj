@@ -96,6 +96,26 @@
     :output-type "integer"
     :tags #{::all ::math}}
 
+   {:name- "count consonants"
+    :args ["string"]
+    :function (fn [s]
+                (count (filter #(and (Character/isLetter %) 
+                                     (not (#{\a \e \i \o \u \A \E \I \O \U} %))) s)))
+
+    :verifications [["absolute"], ["bag"], ["lemon"]]
+    :output-type "integer"
+    :test-limit 20
+    :tags #{::all ::string}}
+
+   {:name- "subtract half"
+    :args ["integer" "integer"]
+    :function (fn [a b]
+                (- a (quot b 2)))
+    :verifications [[3, 2], [5, 5], [2, 9]]
+    :output-type "integer"
+    :test-limit 20
+    :tags #{::all ::math}}
+
    {:name- "set heading"
     :args ["integer" "integer"]
     :function (fn [a b]
@@ -116,7 +136,7 @@
                     [54, 144]
                     [30, 150]]
     :output-type "string"
-    :test-limit 20
+    :test-limit 30
     :tags #{::all ::investigation}}
 
    {:name- "crack lock"

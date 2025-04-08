@@ -2,8 +2,8 @@
 
 This is a problem-set for the [SherlockBench AI benchmarking system](https://sherlockbench.com).
 
-It is designed to be a hard benchmark which is challenging for even frontier
-reasoning models.
+This problem-set has some easy problems and lots of hard problems which are
+challenging for even frontier reasoning models.
 
 ## Usage
 Copy the source file into your checkout of the
@@ -19,3 +19,6 @@ Run the tests like this:
 ```
 clj -X:test
 ```
+
+## Version
+This is Sherlock1v2
