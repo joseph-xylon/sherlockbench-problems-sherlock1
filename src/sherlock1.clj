@@ -18,6 +18,7 @@
     :verifications [["hello" "X"]
                     ["code" "Y"]]
     :output-type "string"
+    :test-limit 20
     :tags #{::all ::string}}
    
    {:name- "difference of closest pair"
@@ -30,6 +31,7 @@
                     [10 7 16]
                     [1 3 11]]
     :output-type "integer"
+    :test-limit 20
     :tags #{::all ::math}}
 
    {:name- "all odd or even"
@@ -41,6 +43,7 @@
                     [2 4 8]
                     [1 3 5]]
     :output-type "boolean"
+    :test-limit 20
     :tags #{::all ::logic}}
 
    {:name- "add biggest and smallest"
@@ -50,6 +53,7 @@
     :verifications [[1 5 3]
                     [7 2 9]]
     :output-type "integer"
+    :test-limit 20
     :tags #{::all ::math}}
    
    {:name- "even sum"
@@ -60,6 +64,7 @@
                     [3 6]
                     [5 8]]
     :output-type "boolean"
+    :test-limit 20
     :tags #{::all ::math ::logic}}
    
    {:name- "can form triangle"
@@ -72,6 +77,7 @@
                     [1 1 3]
                     [5 5 5]]
     :output-type "boolean"
+    :test-limit 20
     :tags #{::all ::math ::logic}}
    
    {:name- "odd length reverse"
@@ -84,6 +90,7 @@
                     ["code"]
                     ["ape"]]
     :output-type "string"
+    :test-limit 20
     :tags #{::all ::string}}
    
    {:name- "ignore two args"
@@ -94,6 +101,7 @@
                     [7 2 9]
                     [4 4 4]]
     :output-type "integer"
+    :test-limit 20
     :tags #{::all ::math}}
 
    {:name- "count consonants"
@@ -111,7 +119,7 @@
     :args ["integer" "integer"]
     :function (fn [a b]
                 (- a (quot b 2)))
-    :verifications [[3, 2], [5, 5], [2, 9]]
+    :verifications [[7, 4], [19, 19], [39, 45]]
     :output-type "integer"
     :test-limit 20
     :tags #{::all ::math}}
