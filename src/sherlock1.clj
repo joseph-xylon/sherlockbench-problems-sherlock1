@@ -149,6 +149,7 @@
 
    {:name- "crack lock"
     :args ["integer" "integer" "integer"]
+    ;; return 3-D Manhattan-distance until they guess right
     :function (fn [a b c]
                 (let [code [5 3 8]
                       attempts [a b c]
